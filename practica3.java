@@ -19,11 +19,11 @@ public class practica3 {
         }
 
         // string
-        String name = "Nastyushka";
+        String name = "Christmas";
         switch (name) {
-            case "Nastya": System.out.println("Hello, Nastya!"); break;
-            case "Nastyushka": System.out.println("Hello, Nastyushka!"); break;
-            default: System.out.println("Hello, stranger!");
+            case "Hello": System.out.println("Hello!"); break;
+            case "Christmas": System.out.println("Merry Christmas!"); break;
+            default: System.out.println("Happy holiday!");
         }
 
         // Byte, Short, Character, Integer
