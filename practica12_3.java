@@ -9,7 +9,7 @@ public class practica12_3 {
     static class Cat extends Animal {
         // переопределенный метод с ошибкой в имени
         @Override
-        public String sound() {  // компилятор сообщит об ошибке
+        public String sount() {  // компилятор сообщит об ошибке
             return "Meow";
         }
     }
