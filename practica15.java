@@ -1,4 +1,4 @@
-interface MyInterface2 {
+interface MyInterface {
 
     // Вложенный класс
     class NestedClass {
@@ -17,10 +17,10 @@ interface MyInterface2 {
 public class practica15 {
     public static void main(String[] args) {
         // 1. Прямой вызов через имя интерфейса
-        MyInterface2.NestedClass nested = new MyInterface2.NestedClass();
+        MyInterface.NestedClass nested = new MyInterface.NestedClass();
         nested.displayMessage();
 
         // 2. Вызов через статический метод интерфейса
-        MyInterface2.useNestedClass();
+        MyInterface.useNestedClass();
     }
 }

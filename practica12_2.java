@@ -1,16 +1,16 @@
 public class practica12_2 {
     static class Animal {
         // метод суперкласса
-        public String sound() {
-            return "Some generic sound";
+        public String RussianName() {
+            return "Какая-то животинка";
         }
     }
 
     static class Cat extends Animal {
         // переопределенный метод
         @Override
-        public String sound() {
-            return "Meow";
+        public String RussianName() {
+            return "Кошка";
         }
     }
 
@@ -18,7 +18,7 @@ public class practica12_2 {
         Animal myAnimal = new Animal();
         Animal myCat = new Cat();
 
-        System.out.println("Animal sound: " + myAnimal.sound()); // Вызов метода Animal
-        System.out.println("Cat sound: " + myCat.sound()); // Вызов метода Dog
+        System.out.println("Animal: " + myAnimal.RussianName()); // Вызов метода Animal
+        System.out.println("Cat: " + myCat.RussianName()); // Вызов метода Dog
     }
 }

@@ -1,6 +1,6 @@
 public class practica11_1 {
     static class A {
-        int a = 10;
+        int a = 100;
 
         A() {
             System.out.println("Constructor of A");
@@ -12,7 +12,7 @@ public class practica11_1 {
     }
 
     static class B extends A {
-        int a = 20;
+        int a = 10000;
 
         B() {
             super(); // обращение к конструктору суперкласса

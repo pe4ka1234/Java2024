@@ -1,8 +1,6 @@
 public class practica02_1 {
     public static void main(String[] args) {
 
-        //    Практика 1
-
         // Целочисленные типы
         byte byteValueNull = 0;
         byte byteValue = 120;

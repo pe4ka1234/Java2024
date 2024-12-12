@@ -1,11 +1,11 @@
 public class practica13 {
     static class Animal {
         private String name;
-        private String sound;
+        private String rusName;
 
-        public Animal(String name, String sound) {
+        public Animal(String name, String rusName) {
             this.name = name;
-            this.sound = sound;
+            this.rusName = rusName;
         }
 
         // переопределение метода equals()
@@ -22,21 +22,21 @@ public class practica13 {
 
             Animal other = (Animal) obj;
 
-            return this.name.equals(other.name) && this.sound.equals(other.sound);
+            return this.name.equals(other.name) && this.rusName.equals(other.rusName);
         }
 
         // переопределение метода hashCode() для соблюдения контракта equals() и hashCode()
         @Override
         public int hashCode() {
             int result = name.hashCode();
-            result = 31 * result + sound.hashCode();
+            result = 31 * result + rusName.hashCode();
             return result;
         }
     }
     public static void main(String[] args) {
-        Animal dog1 = new Animal("Dog", "Bark");
-        Animal dog2 = new Animal("Dog", "Bark");
-        Animal cat = new Animal("Cat", "Meow");
+        Animal dog1 = new Animal("Dog", "Собака");
+        Animal dog2 = new Animal("Dog", "Собака");
+        Animal cat = new Animal("Cat", "Кошка");
 
         System.out.println(dog1.equals(dog2)); // true
         System.out.println(dog1.equals(cat));  // false

@@ -1,61 +1,62 @@
 public class practica2_1 {
     public static void main(String[] args) {
 
-        int a = 1;
-        a += 9;
-        a -= 5;
-        a *= 2;
-        a /= 5;
-        a %= 2;
+        int number = 1;
+        number += 9;
+        number -= 5;
+        number *= 2;
+        number /= 5;
+        number %= 2;
 
-        String s = "Merry";
-        s += " Christmas!";
+        String baseString = "Happy";
+        baseString += " Holidays!";
 
-        int x = 5, y = 9;
-        int max = (x > y) ? x : y;
+        int firstValue = 5, secondValue = 9;
+        int largerValue = (firstValue > secondValue) ? firstValue : secondValue;
 
-        boolean A = true, B = false;
-        boolean C = A && B;
-        boolean D = A || B;
+        boolean truthy = true, falsy = false;
+        boolean conjunction = truthy && falsy;
+        boolean disjunction = truthy || falsy;
 
-        boolean isNotEmpty = s != null && !s.isEmpty();
+        boolean hasContent = baseString != null && !baseString.isEmpty();
 
-        boolean isEqual = x == y;
-        boolean isNotEqual = x != y;
-        boolean isGreater = x > y;
-        boolean isLessOrEqual = x <= y;
+        boolean isSame = firstValue == secondValue;
+        boolean isDifferent = firstValue != secondValue;
+        boolean isBigger = firstValue > secondValue;
+        boolean isSmallerOrEqual = firstValue <= secondValue;
 
-        int b = 1, c = 3;
-        int orResult = b | c;
-        int xorResult = b ^ c;
-        int andResult = b & c;
+        int alpha = 1, beta = 3;
+        int bitwiseOr = alpha | beta;
+        int bitwiseXor = alpha ^ beta;
+        int bitwiseAnd = alpha & beta;
 
-        int shift = 8;
-        int rightShift = shift >> 2;
-        int zeroFillShift = shift >>> 2;
-        int leftShift = shift << 2;
+        int baseShift = 8;
+        int shiftedRight = baseShift >> 2;
+        int zeroFillShiftedRight = baseShift >>> 2;
+        int shiftedLeft = baseShift << 2;
 
-        int sum = b + c;
-        int difference = b - c;
-        int product = b * c;
-        int quotient = b / c;
-        int remainder = b % c;
+        int total = alpha + beta;
+        int diff = alpha - beta;
+        int prod = alpha * beta;
+        int div = alpha / beta;
+        int mod = alpha % beta;
 
-        s = "Merry";
-        String greeting = s + " Christmas";
+        baseString = "Happy";
+        String message = baseString + " Holidays";
 
-        int count = 5;
-        int preIncrement = ++count;  // увеличение, потом использование
-        int postIncrement = count++; // использование, потом увеличение
+        int counter = 5;
+        int incrementFirst = ++counter;  // увеличение, потом использование
+        int incrementAfter = counter++; // использование, потом увеличение
 
-        int preDecrement = --count;  // уменьшение, потом использование
-        int postDecrement = count--; // использование, потом уменьшение
+        int decrementFirst = --counter;  // уменьшение, потом использование
+        int decrementAfter = counter--; // использование, потом уменьшение
 
-        int notB = ~b;
-        boolean flag = false;
-        boolean notFlag = !flag;
+        int bitwiseNotAlpha = ~alpha;
+        boolean state = false;
+        boolean inverseState = !state;
 
-        int priority = 2 * 3 + 1;
-        int explicitPriority = 2 * ( 3 + 1 );
+        int orderOfOps = 2 * 3 + 1;
+        int forcedOrder = 2 * ( 3 + 1 );
     }
 }
+

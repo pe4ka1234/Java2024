@@ -1,4 +1,4 @@
-interface myInterface {
+interface mySecondInterface {
     default void defaultMethod() {
         System.out.println("Default method");
     }
@@ -8,7 +8,7 @@ interface myInterface {
 }
 
 public class practica17_1 {
-    static class MyClass implements myInterface {
+    static class MyClass implements mySecondInterface {
         // можно переопределить
         @Override
         public void defaultMethod() {
@@ -21,6 +21,6 @@ public class practica17_1 {
 
         myObject.defaultMethod();
 
-        myInterface.staticMethod();
+        mySecondInterface.staticMethod();
     }
 }

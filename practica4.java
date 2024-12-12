@@ -2,7 +2,7 @@ import java.util.Arrays;
 
 public class practica4 {
     public static void main(String[] args) {
-        int[] array = {9, 3, 7, 1, 5};
+        int[] array = {2, 8, 0, 4, 2, 0, 0, 4};
 
         // toString
         System.out.println("Original array: " + Arrays.toString(array));
@@ -16,7 +16,7 @@ public class practica4 {
         System.out.println("Index of 7: " + index);
 
         // Equals
-        int[] anotherArray = {1, 3, 5, 7, 9};
+        int[] anotherArray = {0, 4, 0, 4, 2, 0, 2, 0};
         System.out.println("Arrays are equal: " + Arrays.equals(array, anotherArray));
 
         // Compare

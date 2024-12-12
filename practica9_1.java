@@ -1,20 +1,18 @@
 public class practica9_1 {
     enum Day {
-        MONDAY("Понедельник", "Начало недели"),
-        TUESDAY("Вторник", "Второй день недели"),
-        WEDNESDAY("Среда", "Середина недели"),
-        THURSDAY("Четверг", "Почти конец недели"),
-        FRIDAY("Пятница", "Последний рабочий день"),
-        SATURDAY("Суббота", "Выходной день"),
-        SUNDAY("Воскресенье", "Выходной день");
+        MONDAY("Понедельник"),
+        TUESDAY("Вторник"),
+        WEDNESDAY("Среда"),
+        THURSDAY("Четверг"),
+        FRIDAY("Пятница"),
+        SATURDAY("Суббота"),
+        SUNDAY("Воскресенье");
 
         private String russianName;
-        private String description;
 
         // Конструктор перечисления
-        Day(String russianName, String description) {
+        Day(String russianName) {
             this.russianName = russianName;
-            this.description = description;
         }
     }
 

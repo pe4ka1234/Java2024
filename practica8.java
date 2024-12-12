@@ -22,7 +22,7 @@ public class practica8 {
         printer.printValues(1, 2, 3, 4, 5);
 
         // Вызов метода для строк
-        printer.printValues("Apple", "Banana", "Cherry");
+        printer.printValues("Cat", "Run", "Mouse");
 
     }
 }

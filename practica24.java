@@ -22,7 +22,7 @@ public class practica24 {
             testException();
         } catch (MyException e) {
             // обработка исключения
-            System.out.println("Поймано исключение: " + e.getMessage());
+            System.out.println("Исключение: " + e.getMessage());
             e.printStackTrace();
         }
     }

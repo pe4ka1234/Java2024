@@ -1,15 +1,15 @@
 public class practica12_3 {
     static class Animal {
         // метод суперкласса
-        public String sound() {
+        public String RussianName() {
             return "Some generic sound";
         }
     }
 
     static class Cat extends Animal {
         // переопределенный метод с ошибкой в имени
-        @Override
-        public String sount() {  // компилятор сообщит об ошибке
+        //@Override
+        public String RusianName() {  // компилятор сообщит об ошибке
             return "Meow";
         }
     }

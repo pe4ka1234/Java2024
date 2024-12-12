@@ -15,14 +15,14 @@ public class practica7_2 {
         printList(numList); // Выводим содержимое списка после записи
     }
 
-    // Метод для чтения данных (использует <? extends T>)
+    // <? extends T>
     public static void printList(List<? extends Number> list) {
         for (Number num : list) {
             System.out.println(num);
         }
     }
 
-    // Метод для записи данных (использует <? super T>)
+    // <? super T>
     public static void addToList(List<? super Integer> list) {
         list.add(10); // Добавляем элементы типа Integer
         list.add(20);
